@@ -1,0 +1,17 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+error_log
+_sql/*
+_local/*
+staging/*
+*.htaccess*
+
+*.tar.gz
+*.gz
+*.zip
+

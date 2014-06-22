@@ -1,0 +1,2944 @@
+/****************************/
+/* converge.css
+ * Copyright Theme.
+ * Unauthorised use of this css file or any part of this css file is strictly prohibited/
+/****************************/
+
+/* Basic Typography & Colors
+---------------------------------------------------------------*/
+/* Add general site styling here for typography and background */
+body {
+  font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
+  line-height:1.75em;
+  color:#444444;
+}
+body.front, body.not-front {
+  background:#FEFEFE;
+}
+.front, .not-front {
+  font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+.front input.form-text, .front textarea, .front form input.form-submit, .front input.teaser-button,
+.not-front input.form-text, .not-front textarea, .not-front form input.form-submit, .not-front input.teaser-button {
+  font-size:1em;
+  font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+#navigation-bar, #slogan, #header-bottom .block-menu, #header-top .block-menu {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.block p {
+  margin:0.55em 0 1em;
+}
+/* Specific Typography
+---------------------------------------------------------------*/
+#site-name {
+  font-size: 4.00em;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  top: -4px;
+  text-shadow:1px 1px 1px #333333;
+}
+#site-name a {
+  line-height: 0.9em;
+  display:block;
+}
+#slogan {
+  color: #ffffff;
+  color:rgba(255, 255, 255, 0.6);
+  font-size: 1.08em;
+  font-style: italic;
+  line-height: normal;
+  padding-bottom: 1px;
+  padding-top: 5px;
+}
+a:hover, a:focus, a:active {
+  text-decoration:underline;
+}
+/* HTML Elements
+---------------------------------------------------------------*/
+body {
+}
+/* Site Info
+---------------------------------------------------------------*/
+/* Wrapper around logo, site name, and slogan */
+#header-site-info {
+  padding-bottom:0px;
+  float:left;
+  color:#ffffff;
+}
+#header-bottom {
+  overflow:visible;
+}
+#header-bottom .block {
+  padding-bottom:0;
+}
+/* Add float here to put logo and site name side by side, also add margins as
+  needed */
+#logo {
+  float:left;
+}
+#logo img {
+  display:block;
+}
+/* Link and hover styles for site name */
+#page #site-name a:link, #page #site-name a:visited, #page #site-name a:hover, #page #site-name a:active {
+  color:#ffffff;
+}
+/* Typography for site slogan */
+#slogan {
+}
+/* Regions
+
+  Classes (.region-name) should always be used instead of IDs (#region-name) so
+  that Skinr styles can override them with a class later
+---------------------------------------------------------------*/
+
+/* All Regions
+---------------------------------------------------------------*/
+/* By default this wrapper is set to 100% width and centered -- override here to
+  narrow wrapper or align left or right */
+.page-outer {
+  padding:0px 0;
+}
+.page {
+}
+dt {
+  font-weight:bold;
+}
+/* The 0 values here remove padding and spacing at the bottom of the page.
+  Remove to add a gap at the very bottom of the page */
+/* Header Regions
+---------------------------------------------------------------*/
+/* Header Top region to the bottom of Header region */
+/* For full-width header background, add background image/color here */
+.header-top-outer {
+  z-index:4;
+  position:relative;
+}
+.header-group-wrapper {
+  z-index:3;
+  position:relative;
+  background:url(../images/header-top-shadow-bg.png) left top repeat-x;
+  padding-top:8px;
+}
+#middle-container {
+  z-index:2;
+  position:relative;
+  clear:both;
+  background:url(../images/middle-container-bg.png) left bottom repeat-x;
+  padding-bottom:16px;
+}
+body.front #middle-container, body.page-jquery-slider #middle-container, body.page-3d-flash-slider #middle-container {
+  padding-top:15px;
+}
+.header-group-wrapper-inner {
+}
+.header-group-sub-sub-inner, .header-bottom-inner {
+  padding:29px 0 29px;
+}
+.header-group {
+}
+.header-group-inner {
+}
+.header-bottom-inner {
+  padding:10px 0;
+}
+/* Header Top region which sits above the header */
+/* Works well with inline login or inline menu block style */
+.header-top {
+}
+.header-top-wrapper {
+  padding-top:7px;
+  background:url(../images/header-top-bg.png) left bottom repeat;
+}
+.header-top-outer {
+}
+.header-top-wrapper-inner {
+  
+}
+.header-top-sub-sub-outer {
+  position:relative;
+}
+.header-top-sub-sub-sub-outer {
+  overflow:hidden;
+}
+/* Primary Menu
+/-------------------------------------------------------------- */
+/* Add general styles for primary menu here, such as typography, borders, floats,
+  or spacing above/below */
+
+#navigation-bar {
+  width:auto;
+  overflow:visible;
+  z-index:99;
+  float:right;
+}
+#navigation-bar .block {
+  padding-bottom:0px;
+  overflow:visible;
+  float:right;
+}
+#navigation-bar .fusion-edit {
+  z-index:11;
+}
+#navigation-bar .block-menu {
+  width:auto;
+}
+#navigation-bar-inner {
+  margin-left:0px;
+}
+
+/* styles for Superfish primary menu */
+.navigation-bar-inner .inner ul.menu {
+  position:relative;
+  margin-left:0px;
+  left:0px;
+}
+.navigation-bar-inner .inner ul.menu ul {
+  display:none;
+  position:absolute;
+}
+/* Adding Menu Arrow */
+.navigation-bar-inner .inner ul.menu ul span.menu-arrow {
+  background:transparent url(../images/menu-arrow.png) 21px 7px no-repeat;
+  position:absolute;
+  top:-17px;
+  left:-10px;
+  width:190px;
+  height:17px;
+}
+.navigation-bar-inner .inner ul.menu ul ul span.menu-arrow {
+  display:none;
+}
+.navigation-bar-inner .inner ul.menu li {
+  float:left;
+  display:block;
+  position:relative;
+  border-right:0px;
+  margin-left:5px;
+  line-height:normal;
+  z-index:1;
+}
+.navigation-bar-inner .inner ul.menu li.active-trail, .navigation-bar-inner .inner ul.menu li:hover, .navigation-bar-inner .inner ul.menu li.sfHover {
+  background:url(../images/black-transparent.png) left top repeat;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius:5px;
+  display:block;
+  float:left;
+  z-index:10;
+}
+.navigation-bar-inner .inner ul.menu li.expanded:hover, .navigation-bar-inner .inner ul.menu li.sfHover {
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-radius:5px 5px 0px 0px;
+}
+.navigation-bar-inner .inner ul.menu li.expanded:hover li, .navigation-bar-inner .inner ul.menu li.sfHover li {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius:0;
+}
+.navigation-bar-inner .inner ul.menu li.active-trail li, .navigation-bar-inner .inner ul.menu li:hover li, .navigation-bar-inner .inner ul.menu li.sfHover li {
+  height:auto;
+  background:none;
+  margin-left:0px;
+}
+.navigation-bar-inner .inner ul.menu li.active-trail a:link, .navigation-bar-inner .inner ul.menu li.active-trail a:visited {
+  background-color:transparent;
+  background-position:center bottom;
+  background-repeat:no-repeat;
+  color:#ffffff;
+}
+#page .navigation-bar-inner .inner ul.menu li.sfHover a:link, #page .navigation-bar-inner .inner ul.menu li.sfHover a:visited, .navigation-bar-inner .inner ul.menu li.active-trail li a, .navigation-bar-inner .inner ul.menu li.active-trail li a:visited {
+  background:none;
+}
+/* Link style for top level menu items, add padding here */
+#navigation-bar-inner .inner ul.menu li a,
+#navigation-bar-inner .inner ul.menu li a:visited {
+  float:left;
+  display:block;
+  font-weight:bold;
+  padding:8px 11px 7px;
+  color:#ffffff;
+  line-height:normal;
+  text-decoration:none;
+  text-shadow:1px 1px #000000;
+  font-size:1.083em;
+}
+
+#page .navigation-bar-inner .inner ul.menu li:hover a,
+#page .navigation-bar-inner .inner ul.menu li a:hover,
+#page .navigation-bar-inner .inner ul.menu li.active-trail a,
+#page .navigation-bar-inner .inner ul.menu li.active-trail a:visited {
+  color:#ffffff;
+}
+#page .navigation-bar-inner .inner ul.menu li:hover li a,
+#page .navigation-bar-inner .inner ul.menu li.sfHover li a, 
+#page .navigation-bar-inner .inner ul.menu li.sfHover li a:visited, 
+#page .navigation-bar-inner .inner ul.menu li.active-trail li a, 
+#page .navigation-bar-inner .inner ul.menu li.active-trail li a:visited {
+  color:#ffffff;
+}
+/* These are the top level menu items, add border-right here for separators */
+.navigation-bar-inner .inner ul.menu li {
+}
+
+/* Add border-right: 0; here to remove separator on last menu item */
+.navigation-bar-inner .inner ul.menu li.last {
+  padding-right:0px;
+}
+
+/* Style for hover of dropdown menu items (add background-color here) */
+.navigation-bar-inner .inner ul.menu li:hover,
+.navigation-bar-inner .inner ul.menu li.sfHover {
+}
+
+/* Style for container of dropdown, add background or border */
+.navigation-bar-inner .inner ul.menu ul {
+  background:url(../images/black-transparent.png) left top repeat;
+  -moz-border-radius: 0px 5px 5px 5px;
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0px;
+  border-radius: 0px 5px 5px 5px;
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  top:31px;
+  width:170px;
+}
+.navigation-bar-inner .inner ul.menu li li:hover ul, .navigation-bar-inner .inner ul.menu li li.sfHover ul {
+  border-top-width:1px;
+  top:-1px;
+  left:170px;
+}
+/* Style for individual dropdown menu items, add border-bottom for separators */
+.navigation-bar-inner .inner ul.menu ul {
+}
+.navigation-bar-inner .inner ul.menu li li {
+  width:170px;
+  white-space:normal;
+}
+.navigation-bar-inner .inner ul.menu li li.expanded {
+  background-image:url(../images/primary-menu-expanded.gif);
+  background-position:150px 10px;
+  background-repeat:no-repeat;
+}
+.navigation-bar-inner .inner ul.menu li li.last {
+  border-bottom:0px;
+}
+.navigation-bar-inner .inner ul.menu li li li {
+}
+#navigation-bar-inner .inner ul.menu ul a, #navigation-bar-inner .inner ul.menu ul a:visited {
+  padding:6px 13px;
+  font-weight:normal;
+  border:none;
+  width:150px;
+  height:auto;
+  line-height:normal;
+  text-shadow:none;
+}
+/* Style for hover of dropdown menu items (add background-color here) */
+.navigation-bar-inner .inner ul.menu li ul li:hover,
+.navigation-bar-inner .inner ul.menu li ul li.sfHover {
+  padding:0px;
+  height:auto;
+  background-color:#000000;
+  -moz-border-radius:0px;
+  -webkit-border-radius:0px;
+  border-radius:0px;
+}
+
+
+/* Secondary menu
+-------------------------------------------------------------- */
+/* This menu usually appears in the header as a set of converge text links */
+.secondary-menu {
+}
+
+/* Set general style for menu here -- background, alignment, etc. */
+.secondary-menu-inner ul.links {
+}
+
+/* Add a border-right here for a separator */
+.secondary-menu-inner ul.links li {
+}
+
+/* Add border-right: 0; here to remove right separator on last menu item */
+.secondary-menu-inner ul.links li.last {
+}
+
+/* Styles for links */
+.secondary-menu-inner ul.links li a:link,
+.secondary-menu-inner ul.links li a:visited {
+  padding: 3px;
+}
+
+.secondary-menu-inner ul.links li a:hover,
+.secondary-menu-inner ul.links li a:focus,
+.secondary-menu-inner ul.links li a.active {
+}
+/* Header - Search
+---------------------------------------------------------------*/
+.search-box {
+}
+.search-box-inner {
+}
+.search-box-inner form#search-theme-form {
+}
+.search-box-inner input#edit-search-theme-form-header {
+}
+/*  Preface Regions
+---------------------------------------------------------------*/
+/* The Preface Top region sits between the header and the Main Area
+ (columns, sidebars, and main content).  The Preface Bottom region
+ is inside the Main Area. */
+#featured-bg-outer {
+  float:left;
+  width:100%;
+  clear:both;
+  background-image:url(../images/featured-gr-bg.png);
+  background-repeat:repeat-y;
+  background-position:center top;
+}
+#featured-bg {
+  float:left;
+  width:100%;
+  background:url(../images/featured-pattern-bg.png) center top repeat;
+}
+#featured-bg-inner {
+  background:url(../images/featured-glow-bg.png) center top no-repeat;
+  float:left;
+  width:100%;
+}
+#featured-bg-sub-inner {
+  float:left;
+  width:100%;
+  background:url(../images/featured-bottom-shadow.png) left bottom repeat-x;
+  clear:both;
+}
+.preface-upper-top-wrapper {
+  padding-bottom:16px;
+}
+.preface-upper-top-wrapper .block {
+  padding-bottom:19px;
+}
+.preface-top-wrapper {
+}
+.preface-top {
+}
+.preface-top-inner {
+}
+.preface-top-wrapper {
+}
+#featured2-outer, #featured2, #featured2-inner, #featured2-sub-inner, #featured2-sub-sub-inner {
+  float:left;
+  width:100%;
+}
+#featured2-outer {
+  clear:both;
+  background:url(../images/featured2-shadow.png) left bottom repeat-x;
+  padding-bottom:25px;
+}
+#featured2 {
+  background:url(../images/featured2-bg.png) left top repeat;
+}
+#featured2-inner {
+  background:url(../images/featured2-top-bg.png) left top repeat-x;
+}
+#featured2-sub-inner {
+  background:url(../images/featured2-bottom-bg.png) left bottom repeat-x;
+}
+#featured2-sub-sub-inner {
+  background:url(../images/featured2-glow.png) center top no-repeat;
+  padding:29px 0 18px;
+}
+.preface-top {
+}
+.preface-bottom {
+}
+.preface-bottom-inner {
+}
+/*  Main Area (content + sidebars + preface bottom + postscript top)
+---------------------------------------------------------------*/
+.main-wrapper {
+  padding-top:5px;
+}
+body.page-jquery-slider .main-wrapper, body.page-kwicks-slider .main-wrapper, body.page-3d-flash-slider .main-wrapper {
+  display:none;
+}
+/* Sidebar Regions
+---------------------------------------------------------------*/
+/* Sidebar widths can be controlled through theme settings */
+.sidebar-last {
+  background:url(../images/sidebar-last-seperator-bottom.png) 10px bottom no-repeat;
+  padding-bottom:50px;
+}
+.sidebar-last-inner {
+  background:url(../images/sidebar-last-seperator.png) 10px top no-repeat;
+  padding-top:40px;
+}
+.sidebar-last .block .inner {
+  margin:0 10px 0 33px;
+}
+.sidebar .block {
+  padding-bottom:20px;
+}
+.sidebar-last .last {
+  padding-bottom:0px;
+}
+.sidebar-last .block, .sidebar-first .block {
+  
+}
+/* Sidebar Menus
+-------------------------------------------------------------- */
+.sidebar .block-menu_block ul.menu, .sidebar .block-menu_block ul.menu li {
+  margin:0;
+  padding:0;
+  list-style:none;
+  list-style-image:none;
+}
+.sidebar .block-menu_block ul.menu li.expanded li a:link, .sidebar .block-menu_block ul.menu li.expanded li a:visited {
+  padding-left:38px;
+  background:url(../images/list-style-arrow.png) 26px 11px no-repeat;
+}
+.sidebar .block-menu_block ul.menu li.expanded li.expanded li a:link, .sidebar .block-menu_block ul.menu li.expanded li.expanded li a:visited {
+  padding-left:58px;
+  background:url(../images/list-style-arrow.png) 46px 11px no-repeat;
+}
+.sidebar .block-menu_block ul.menu li.expanded li.expanded li.expanded li a:link, .sidebar .block-menu_block ul.menu li.expanded li.expanded  li.expanded li a:visited {
+  padding-left:78px;
+  background:url(../images/list-style-arrow.png) 66px 11px no-repeat;
+}.sidebar .block-menu_block ul.menu li a:link, .sidebar .block-menu_block ul.menu li a:visited {
+  display:block;
+  text-decoration:none;
+  color:#444444;
+  padding:6px 18px;
+  background:url(../images/list-style-arrow.png) 6px 11px no-repeat;
+  border-bottom:1px solid #f2f2f2;
+}
+#page .sidebar .block-menu_block ul.menu li a:hover, #page .sidebar .block-menu_block ul.menu li.expanded a:hover {
+  background-color:#f8f8f8;
+  color:#000000;
+}
+
+/* Content Regions
+-------------------------------------------------------------- */
+.content-top {
+}
+
+.content-group {
+  position:relative;
+}
+
+.content {
+}
+
+.content-inner {
+}
+
+.content-bottom {
+}
+
+/* This region only appears on full node pages. It's useful for ads or other
+  content between the body of the node and its comments */
+.node-bottom {
+}
+
+/*  Postscript & Footer Regions
+-------------------------------------------------------------- */
+.postscript-top {
+}
+
+.postscript-top-inner {
+}
+
+.postscript-bottom-wrapper {
+}
+
+.postscript-bottom {
+}
+
+#postscript-bottom-one {
+}
+.postscript-bottom-inner {
+}
+
+.footer-wrapper {
+}
+#footer-wrapper-main, #footer-wrapper-inner, #footer-wrapper-sub-inner {
+  float:left;
+  width:100%;
+}
+#footer-wrapper-main {
+}
+#footer-wrapper-inner {
+  background:url(../images/footer-glow-bg.png) center top repeat-x;
+}
+#footer-wrapper-sub-inner {
+  background:url(../images/footer-top-shadow.png) left top repeat-x;
+}
+
+.footer {
+  padding-bottom:14px;
+  padding-top:30px;
+}
+
+#footer, #footer-message {
+  font-size:100%;
+}
+#footer-two-inner {
+  padding-top:29px;
+  padding-bottom:13px;
+}
+
+#footer-two-wrapper {
+  background:url(../images/footer-border.png) left top repeat-x;
+}
+
+.page .footer-two a, .page .footer-two a:link, .page .footer-two a:visited {
+  color:#696969;
+  text-decoration:none;
+}
+
+.footer-inner {
+}
+
+.footer-message-wrapper {
+}
+
+.footer-message {
+}
+
+.footer-message-inner {
+}
+
+.footer-message-text {
+}
+/* Page titles
+/---------------------------------------------------------------*/
+/* Page and full node titles */
+.page-title-inner {
+  padding:0 10px 16px;
+}
+h1.title {
+  color:#ffffff;
+  font-size:250%;
+  font-weight:normal;
+  line-height:1.2em;
+  margin:0;
+  padding:0;
+  letter-spacing:-0.03em;
+}
+/* Default node styles
+/---------------------------------------------------------------*/
+/* Change unpublished and preview colors for dark background themes */
+.node-unpublished {
+  background-color: #fff4f4;
+}
+.preview .node {
+  background-color: #ffffea;
+}
+/* Typography for node titles */
+h2.title {
+}
+/* Colors and styles for linked node titles, ie. teaser listing at /node */
+h2.title a:link, h2.title a:visited {
+}
+h2.title a:hover, h2.title a:focus, h2.title a:active {
+}
+/* Separators and padding for node teasers */
+.teaser {
+}
+/* Author/date info */
+.meta {
+}
+.submitted {
+  font-size:1em;
+}
+.comment .submitted a:link, .comment .submitted a:visited, .meta .submitted a, .meta .submitted a:link, .meta .submitted a:visited {
+}
+/* Links for nodes (taxonomy, commenting, read more, etc) */
+.node .read-more, .node .more-link, .node .links, .submitted, .terms {
+  font-size:100%;
+}
+div.links {
+  padding:15px 0px 5px 0;
+  float:left;
+  width:100%;
+}
+.block div.links {
+  padding-bottom:0px;
+  padding-top:9px;
+}
+.block ul.links li a:link, .block ul.links li a:visited {
+  font-weight:bold;
+  padding:5px 7px;
+  text-decoration:none;
+  line-height:normal;
+}
+.block ul.links li a:link span, .block ul.links li a:visited span {
+  padding:0px;
+  height:auto;
+}
+.block .node div.links {
+  padding-bottom:12px;
+}
+ul.links li {
+  padding-right:5px;
+  padding-bottom:5px;
+  float:left;
+  display:block;
+}
+ul.links li.last {
+  padding-right:0px;
+}
+ul.links a, ul.links a:link, ul.links a:visited, ul.links a span, ul.links a:link span, ul.links a:visited span, span.regulat-text {
+  display:block;
+  float:left;
+}
+ul.links a span, ul.links a:link span, ul.links a:visited span {
+  cursor:pointer;
+  padding:7px 9px 8px 14px;
+  height:18px;
+  text-decoration:none;
+}
+ul.links li.login span, #forum ul.links li.login a {
+  float:left;
+  display:block;
+}
+ul.links li span.regular_text {
+  color:#333333;
+  padding:7px 9px 8px 9px;
+  display:block;
+  float:left;
+}
+/* Forum Post a Topic Login Link */
+#forum ul.links li.login a, #forum ul.links li span.regular_text {
+  padding:0px;
+  line-height:normal;
+  font-weight:normal;
+}
+#forum ul.links li span.regular_text {
+  padding-left:4px;
+}
+#content-content .node ul.links li.comment_forbidden a {
+  padding-right:4px;
+}
+/* Terms */
+.terms ul.links li, .terms ul.links a, .terms ul.links li a:link, .terms ul.links li a:visited, .terms ul.links li a span {
+  padding:0px;
+  margin:0px;
+  border:0px;
+  height:auto;
+}
+.terms ul.links li {
+  padding:0 5px;
+  float:none;
+  width:auto;
+  display:inline
+}
+#page .terms ul.links li a:link, #page .terms ul.links li a:visited {
+  background:url(../images/icons/tag.gif) 0 2px no-repeat;
+  padding-left:16px;
+  border:none;
+}
+#page .terms ul.links li a span {
+  padding:0px;  
+}
+.terms ul.links li a:hover {
+  text-decoration:underline;
+}
+.block .terms ul.links li a:link, .block .terms ul.links li a:visited {
+  font-weight:normal;
+  float:none;
+  display:inline;
+}
+.block .terms ul.links li a:link span, .block .terms ul.links li a:visited  span {
+  display:inline;
+  float:none;
+}
+/* Only more/read more links */
+div.node .read-more a, div.node .more-link a {
+}
+/* Drupal Messages
+/---------------------------------------------------------------*/
+/* General style for all errors/messages (border, padding, etc.) */
+div.content-messages div.messages, div.content-help div.help {
+  border-width:1px;
+  margin-bottom:10px;
+  font-weight:normal;
+}
+div.help code {
+  background:none;
+  border:none;
+  padding:0px;
+  margin:0px;
+  display:inline;
+}
+#admin-menu {
+  height:20px;
+}
+/* Status messages: green */
+div.content-messages-inner div.status {
+}
+#page #content-messages-inner {
+  margin:0px;
+}
+/* Warning messages: yellow */
+div.content-messages-inner div.warning {
+}
+/* Error messages: red */
+div.content-messages-inner div.error {
+}
+/* Help messages: blue */
+#page div#content-help-inner {
+  margin-left:0px;
+  margin-right:0px;
+}
+div.content-help-inner div.help {
+  padding-bottom:0px;
+  padding-top:0px;
+
+  margin-bottom:0px;
+}
+
+/* content type edit fields */
+#content-field-overview-form, #quicktabs-tabs, #content-display-overview-form {
+  overflow:auto;
+}
+/* Error that appears when a required form field is not filled out */
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: 1px solid #dd0000;
+}
+/* "New" text and required form field asterisk (default = red) */
+.marker, .form-required {
+  color: #dd0000;
+}
+#preface-top .block a.button {
+  margin-top:14px;
+  margin-bottom:0px;
+}
+/* Default block title styles
+/---------------------------------------------------------------*/
+h2.block-title {
+}
+h2.block-title span{
+  display:block;
+}
+h2.block-title .arrow {
+}
+/* Breadcrumbs
+---------------------------------------------------------------*/
+#breadcrumbs-outer {
+  padding-bottom:16px;
+  float:left;
+  width:100%;
+  clear:both;
+}
+#breadcrumbs {
+  padding:11px 0 0px 0;
+  font-size:1em;
+}
+#breadcrumbs-inner {
+  padding:0;
+  margin:0px;
+}
+.breadcrumb {
+  padding-bottom:0px;
+  width:auto;
+  padding:0 0px;
+  line-height:1.2em;
+  color:#999999;
+}
+.breadcrumbs a:link, .breadcrumbs a:visited {
+  padding:0px 14px 0px 0px;
+  margin-right:9px;
+  display:block;
+  color:#cccccc;
+  float:left;
+  background:url(../images/breadcrumb_separator.png) right center no-repeat;
+}
+#page .breadcrumbs a:hover, #page .breadcrumbs a:focus, #page .breadcrumbs a:active {
+  color:#ffffff;
+  text-decoration:none;
+}
+/* Tab Menus   TODO: tab styles?
+/---------------------------------------------------------------*/
+#content-tabs {
+  float: left; /* LTR */
+  margin: 0 0 20px;
+  padding: 0;
+}
+#content-tabs ul.primary, #content-tabs ul.secondary {
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:#e6e6e6;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  float:left;
+  width:100%;
+  height:27px;
+}
+#content-tabs ul.secondary {
+  margin-top: 6px;
+  border-bottom:none;
+}
+#content-tabs ul.primary li, #content-tabs ul.secondary li, #content-tabs ul.primary li a:link, #content-tabs ul.primary li a:visited {
+  border-style: none;
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+#content-tabs ul.primary li {
+  margin-right:3px;
+  border:1px solid #fcfcfc;
+}
+#content-tabs ul.primary li a:link, #content-tabs ul.primary li a:visited {
+  background: #ffffff;
+  border:1px solid #ffffff;
+  color: #444444;
+  padding: 5px 15px 0px;
+  font-weight: bold;
+  height:16px;
+}
+#content-tabs ul.primary li.active, #content-tabs ul.primary li:hover {
+  border-width:1px 1px 1px 1px;
+  border-color:#e6e6e6 #e6e6e6 #ffffff #e6e6e6;
+  border-style:solid;
+  padding-top:0px;
+}
+#content-tabs ul.primary li a.active:link, #page #content-tabs ul.primary li a.active:visited, #page #content-tabs ul.primary li a.active:hover, #page #content-tabs ul.primary li a.active:focus, #content-tabs ul.primary li.active a:link, #content-tabs ul.primary li.active a:visited, #page #content-tabs ul.primary li.active a:hover, #page #content-tabs ul.primary li.active a:focus, #page #content-tabs ul.primary li a:hover {
+  padding:5px 15px 3px;
+  background:#ffffff;
+  border:1px solid #ffffff;
+  color:#444444;
+  background:#ffffff url(../images/tabs-bg.gif) left top repeat-x;
+}
+#page #content-tabs ul.primary li a:hover, #page #content-tabs ul.primary li a:focus {
+  color:#444444;
+}
+/* Secondary tabs */
+#content-tabs ul.secondary {
+  margin-top:15px;
+  height:28px;
+}
+#content-tabs ul.secondary li, #content-tabs ul.secondary li a, #content-tabs ul.secondary li a:link, #content-tabs ul.secondary li a:visited {
+  display:block;
+  float:left;
+}
+#content-tabs ul.secondary li {
+  margin:0 3px;
+  border:none;
+  line-height:normal;
+}
+#content-tabs ul.secondary li a:link, #content-tabs ul.secondary li a:visited {
+  border:1px solid #ffffff;
+  background:#ffffff;
+  padding:5px 10px;
+  color:#444444;
+  font-weight:bold;
+  line-height:normal;
+}
+#content-tabs ul.secondary li.active a:link, #content-tabs ul.secondary li.active a:visited, #content-tabs ul.secondary li a:hover, #content-tabs ul.secondary li a:active, #content-tabs ul.secondary li a:focus {
+  background:#f8f8f8;
+  border-color:#e6e6e6;
+}
+/* Pagers
+---------------------------------------------------------------*/
+.item-list .pager {
+  margin-bottom:10px;
+}
+ul.pager {
+  font-size:110%;
+  padding-top:5px;
+}
+ul.pager li {
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+}
+
+ul.pager a:link, ul.pager a:visited {
+}
+
+#page ul.pager a, #page ul.pager li.pager-current {
+  border:none;
+  margin-right:9px;
+  padding:3px 6px 2px;
+}
+#page ul.pager a:hover {
+  background:#f8f8f8;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+}
+#page ul.pager li.pager-current {
+  font-weight:bold;
+  background:#f8f8f8;
+  border:1px solid #DADADA;
+}
+/* Forms
+/---------------------------------------------------------------*/
+#page .form-text, #page textarea {
+  min-height:inherit;
+}
+/* Typography and backgrounds for all form buttons */
+form input.form-submit, input.teaser-button, form input.form-submit:focus, input.teaser-button:focus {
+  margin: 2px;
+  padding: 4px 8px;
+  background: #f6f6f6 url(../images/button-bg.gif) left bottom repeat-x;
+  border:1px solid #ababab;
+  color:#6c6c6c;
+  text-shadow:1px 1px #ffffff;
+  font-weight:normal;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  font-weight:normal;
+  font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+  font-size:1em;
+}
+/* Webform block submit Button */
+.block-webform form input.form-submit {
+  margin:0px;
+  margin-bottom:5px;
+}
+/* Hover style for form buttons */
+form input.form-submit:hover, form input.form-submit:hover {
+  background-image:url(../images/button-bg-hover.gif);
+  background-color:#fafafa;
+}
+form input.form-submit:active, input.teaser-button:active {
+  background:#ffffff;
+}
+/* Typography, background, borders, padding for form fields */
+.form-item input, .form-item select, .form-item textarea {
+}
+/* Remove backgrounds and border on radios and checkboxes */
+.form-item .form-radio, .form-item .form-checkbox {
+  background: none;
+  border: none !important;
+}
+/* Fieldset wrapper around groups of form elements -- add border here */
+fieldset {
+}
+/* Typography and spacing for legend of fieldsets */
+fieldset legend {
+}
+/* Link style for legend of fieldsets */
+fieldset legend, legend.collapse-processed, legend.collapse-processed a:link, legend.collapse-processed a:visited {
+}
+/* Custom icons on (open) collapsible fieldsets */
+html.js fieldset.collapsible legend a:link, html.js fieldset.collapsible legend a:visited {
+}
+/* Custom icons on (closed) collapsible fieldsets */
+html.js fieldset.collapsed legend a:link, html.js fieldset.collapsed legend a:visited {
+}
+/* Tables
+---------------------------------------------------------------*/
+table {
+}
+/* Body of tables */
+tbody {
+  border-top: 1px solid #e2e2e2;
+}
+/* Header of tables */
+thead th, th {
+  border-bottom: 3px solid #e2e2e2;
+  font-weight:normal;
+}
+tbody th {
+  border-bottom: 1px solid #e2e2e2;
+}
+/* Alternating row background styles */
+tr.even, tr.even td {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dadada;
+}
+td {
+  padding:7px 5px;
+}
+tr.odd, tr.odd td {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dadada;
+}
+td.active {
+}
+tr.drag td, tr.drag-previous td {
+  color: #000;
+}
+/* Maintenance Page
+/---------------------------------------------------------------*/
+/* Maintenance page tpl file in Fusion Core has simplified layout, but you can
+  also add specific styles, such as a background, just for your offline page */
+.in-maintenance {
+}
+/*--------------------------------------------------------------*/
+/* Module styles
+/---------------------------------------------------------------*/
+
+
+/* Book
+/---------------------------------------------------------------*/
+.book-navigation {
+  padding:0 0 10px;
+}
+.book-navigation .menu {
+  border-top: 1px solid #e2e2e2;
+  margin-left:0px;
+  padding-bottom:13px;
+  margin-bottom:0px;
+}
+.book-navigation .menu li {
+  padding:1px 0;
+}
+.book-navigation .page-links {
+  background:#fcfcfc;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+/* Comments
+/---------------------------------------------------------------*/
+/* Style for each individual comment */
+div.comment {
+  border-top:1px solid #f2f2f2;
+  background:#f8f8f8;
+  margin:0px;
+  padding:18px 18px 15px;
+}
+#comments {
+  border-top:1px solid #dadada;
+  padding-top:7px;
+  position:relative;
+  top:-6px;
+  margin-bottom:-6px;
+}
+/* Subject (title) of each comment */
+div.comment h3.title {
+  font-size:1.5em;
+  font-weight:normal;
+  line-height:normal;
+}
+div.comment .content {
+  clear:both;
+  padding-top:3px;
+}
+#page div.comment h3.title a:link, div.comment h3.title a:visited, #page div.comment h3.title a:active, #page div.comment h3.title a:focus, #page div.comment h3.title a:hover {
+  color:#444444;
+}
+div.comment span.new {
+  color:orange;
+  float:right;
+  font-weight:bold;
+  position:relative;
+  top:-4px;
+}
+#comments {
+  overflow:visible;
+}
+#comments .indented {
+  margin-left:0px;
+  border-top:1px solid #f2f2f2;
+}
+#comments .indented .comment {
+  background:url(../images/comments-indented.gif) 10px 20px no-repeat;
+  padding-left:45px;
+  padding-top:18px;
+}
+#comments .indented .indented .comment {
+  padding-left:90px;
+  background-position:55px 20px;
+}
+#comments .indented .indented .indented .indented .comment {
+  padding-left:135px;
+  background-position:100px 20px;
+}
+#comments .indented .indented .indented .indented .indented .comment {
+  padding-left:180px;
+  background-position:145px 20px;
+}
+#comments .indented .indented .indented .indented .indented .indented .comment {
+  padding-left:225px;
+  background-position:190px 20px;
+}
+#comments .indented .indented .indented .indented .indented .indented .indented .comment {
+  padding-left:270px;
+  background-position:235px 20px;
+}
+#comments .indented .indented .indented .indented .indented .indented .indented .indented .comment {
+  padding-left:315px;
+  background-position:280px 20px;
+}
+#comments .indented .indented .indented .indented .indented .indented .indented .indented .indented .comment {
+  padding-left:360px;
+  background-position:325px 20px;
+}
+#comments .indented .indented .indented .indented .indented .indented .indented .indented .indented .indented .comment {
+  padding-left:405px;
+  background-position:370px 20px;
+}
+#comments .indented .indented .indented .indented .indented .indented .indented .indented .indented .indented .indented .comment {
+  padding-left:450px;
+  background-position:415px 20px;
+}
+/* Links (edit, reply, delete) for each comment */
+div.comment div.links {
+  padding-top:10px;
+}
+div.comment div.links ul {
+  margin:0px;
+  float:right;
+}
+div.comment div.links a, div.comment ul.links a {
+  font-size:100%;
+  text-transform:capitalize;
+}
+#page .comment ul.links li a:link, #page .comment ul.links li a:visited {
+  padding:0px 6px;
+  font-weight:normal;
+}
+#page .comment ul.links li a:hover {
+  text-decoration:underline;
+}
+#page .comment ul.links li.first a:link, #page .comment ul.links li.first a:visited {
+  padding-left:0px;
+}
+#page .comment ul.links li.last a:link, #page .comment ul.links li.last a:visited {
+  padding-right:0px;
+}
+/* Alternating styles for even/odd comments */
+.comments div.odd, #comments .indented .odd {
+  background-color: #f7f7f7;
+}
+.comments div.even, #comments .indented .even {
+  background-color: #ffffff;
+}
+.comments .submitted {
+}
+.comments ul.links li {
+  padding-bottom:0px;
+}
+div.comment p {
+  margin:0px;
+  padding:5px 0;
+}
+/* A special highlight style for a comment by the author of the node */
+.comments div.comment-by-author {
+}
+.comment .picture {
+  float:left;
+  padding-right:10px;
+}
+.comment .picture img {
+  display:block;
+}
+/* Comment Heading */
+/* Comment signatures */
+.signature {
+  border-top: 1px solid #d6ddb9;
+}
+/* User avatars in comments */
+.comment-wrapper .picture img {
+}
+/* Comment heading */
+h2.comments-header {
+  background:url(../images/comments-heading-bg.gif) 0 11px no-repeat;
+  color:#444444;
+  font-size:1.83em;
+  font-weight:normal;
+  line-height:normal;
+  padding:13px 55px 15px;
+  margin-bottom:4px;
+}
+/* Comment Preview */
+body.page-comment div.comment {
+  padding-left:0px;
+  padding-right:0px;
+  padding-top:2px;
+  background:0px;
+}
+#page .preview .comment {
+  padding:10px;
+}
+body.page-comment #edit-preview {
+  margin-bottom:15px;
+}
+/* Forum
+/---------------------------------------------------------------*/
+#forum .description {
+}
+.forum-topic-navigation {
+  background:#fcfcfc;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+/* Poll
+/---------------------------------------------------------------*/
+.block-poll .poll div.title { /* overriding typography.css of core theme */
+  font-size:1.25em;
+  font-weight:bold;
+  line-height:normal;
+  margin:0;
+	  text-align:left;
+}
+.poll .vote-form .choices {
+  margin:0px;
+}
+.poll .text {
+  padding:5px 0 3px;
+}
+.poll .percent {
+  float:right;
+  color:#505050;
+  margin-top:-37px;
+}
+.poll .total {
+  padding-top:7px;
+  text-align:center;
+  color:#505050;
+  font-weight:bold;
+}
+.poll .bar {
+  border:none;
+  height:13px;
+  background: url(../images/poll_background.gif) left top repeat;
+}
+.poll .bar .foreground {
+  overflow:hidden;
+  height:13px;
+}
+.block-poll ul.links {
+  float:right;
+}
+#poll-cancel-form {
+  margin-bottom:10px
+}
+/* Profiles
+/---------------------------------------------------------------*/
+.profile {
+  clear:both;
+  float:left;
+  width:100%;
+}
+.profile .picture {
+  float: none;
+  text-align:right;
+  margin:0px;
+}
+.profile h3 {
+  clear:both;
+  font-size:1.5em;
+  font-weight:normal;
+  line-height:1.25em;
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  margin-bottom:10px;
+  padding:7px 0px;
+}
+/* Styles for sub-headings on user profiles */
+.profile dl {
+  background:url(../images/dots-horizontal.gif) left bottom repeat-x;
+  float:left;
+  width:100%;
+  padding-bottom:5px;
+}
+.profile dt {
+  font-weight:bold;
+  width:29.5%;
+  float:left;
+  padding:0px;
+  margin:0 0 10px 0;
+}
+.profile dd {
+  width:70%;
+  float:left;
+  margin:0 0 10px 0;
+}
+/* Ubercart - catalog
+/---------------------------------------------------------------*/
+
+/* Horizontal list of subcategories in catalog */
+ul.uc-categories {
+}
+.uc-categories li a {
+  font-weight: bold;
+  padding: 0 5px 0 3px;
+}
+/* Product and category names */
+.catalog-grid-title a:link, .catalog-grid-title a:visited, .category a:link, .category a:visited {
+}
+.catalog-grid-title a:hover, .catalog-grid-title a:focus, .category a:hover, .category a:focus {
+}
+/* Sell price in Ubercart catalog */
+.category-grid-products .catalog-grid-sell-price {
+}
+/* Ubercart - add to cart buttons
+/---------------------------------------------------------------*/
+
+/* Add to cart buttons */
+input.node-add-to-cart, input.list-add-to-cart {
+}
+/* Hover and focus styles, with .hover class added for IE6 support */
+input.node-add-to-cart:hover, input.node-add-to-cart.hover, input.node-add-to-cart:focus, input.list-add-to-cart:hover, input.list-add-to-cart.hover, input.list-add-to-cart:focus {
+}
+/* Ubercart - product nodes
+/---------------------------------------------------------------*/
+
+#field-group {
+}
+#price-group {
+}
+/* Product images */
+.product-image a img {
+}
+.product-image a:hover img, .product-image a:focus img {
+}
+/* Display price on full product nodes */
+.full-node .product-group .uc-price-display {
+}
+/* Product attributes on full nodes */
+.full-node .product-group .attributes {
+}
+/* Ubercart - general / checkout
+/---------------------------------------------------------------*/
+
+/* For optional "Powered by Ubercart" footer message */
+#store-footer {
+}
+#store-footer a:link, #store-footer a:visited {
+}
+/* View cart/Checkout links in Ubercart cart block */
+.cart-block-summary-links ul.links li a {
+}
+.cart-block-summary-links ul.links li.cart-block-checkout a:link, .cart-block-summary-links ul.links li.cart-block-checkout a:visited {
+}
+/* Key checkout process buttons: Checkout, Continue, and Submit Order */
+#uc-cart-view-form #edit-checkout, #uc-cart-checkout-form #edit-continue, #uc-cart-checkout-review-form #edit-submit {
+}
+/* Table on final order review page */
+.order-review-table {
+}
+#cart-form-products table th {
+  border-bottom: 3px solid #dec2c3;
+}
+/* Skinr
+/---------------------------------------------------------------*/
+
+/* This is a sample Skinr style to get you started. See fusion_starter.info */
+.fusion-example-stylename .inner {
+  /* When setting the background color, also set foreground colors for text and
+    links, even if it's similar to the default body style. Remember, this block
+    style may be used in regions with other foreground colors, thus making text
+    invisible if left unspecified */
+  background-color: #e2e2e2;
+  color: #000;
+  /* All padding and borders should go on the .inner div, so as not to break
+    the widths of the grid */
+  border: 3px solid #000;
+  padding: 10px;
+}
+.fusion-right-content ul.menu {
+  text-align:right;
+}
+/* 
+ * Overriding System CSS
+*/
+ul.menu {
+  text-align:inherit;
+}
+.block-menu ul.menu li {
+  margin:0;
+  list-style-image:none;
+}
+.block-menu ul.menu li.first {
+  padding-left:0;
+}
+.block-menu ul.menu li.last {
+  border-right:none;
+  padding-right:0;
+}
+/*** Fusion Inline Menus CSS Override ***/
+.fusion-inline-menu .inner ul.menu li.last a, #footer .fusion-inline-menu .inner ul.menu li.last a {
+  padding-right:0px;
+}
+.fusion-inline-menu .inner ul.menu li.first a, #footer .fusion-inline-menu .inner ul.menu li.first a {
+  padding-left:0px;
+}
+/*** Footer Menu's ***/
+#footer-wrapper-main .fusion-inline-menu .inner ul.menu li {
+  border-color:rgba(255, 255, 255, 0.15);
+}
+#footer-wrapper-main .fusion-inline-menu .inner ul.menu li a {
+  padding:0 10px 0 7px;
+}
+/* Additional font family for Cretive theme settings page */
+/* Lucida */
+.font-family-lucida-grande, .font-family-lucida-grande .form-text, .font-family-lucida-grande textarea {
+    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+.font-family-lucida-grande .form-text, .font-family-lucida-grande textarea {
+  font-size:1em;
+}
+
+
+/* Additional CSS for converge
+/---------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------*/
+/* Background
+/---------------------------------------------------------------*/
+body.front, body.not-front {
+  background:#ffffff;
+}
+/*--------------------------------------------------------------*/
+/* Layout
+/---------------------------------------------------------------*/
+#header-top {
+  overflow:visible;
+  font-size:0.92em;
+}
+#header-top .block {
+  padding:0px 0 0px;
+}
+#header-top p {
+  line-height: 2em;
+  margin: 0;
+  padding: 0px 0 0px;
+}
+#header-top a:link, #header-top a:visited, #header-bottom a:link, #header-bottom a:visited {
+  text-decoration:none;
+  color:#777777;
+}
+#header-top .block-menu, #header-bottom .block-menu {
+  padding:3px 0;
+  overflow:visible;
+  font-size:1.091em;
+}
+#header-top .block-menu .block , #header-bottom .block-menu .block {
+  margin-left:0px;
+}
+#header-top .block-menu ul.menu li, #header-top .block-menu ul.menu li a:link, #header-top .block-menu ul.menu li a:visited,
+#header-bottom .block-menu ul.menu li, #header-bottom .block-menu ul.menu li a:link, #header-bottom .block-menu ul.menu li a:visited {
+  float:left;
+  display:block;
+  padding:0px;
+  margin:0px;
+  border:none;
+  font-weight:bold;
+}
+#header-top .block-menu ul.menu li, #header-bottom .block-menu ul.menu li {
+  margin-right:2px;
+  line-height:normal;
+  position:relative;
+}
+#header-top .block-menu ul.menu li a:link, #header-top .block-menu ul.menu li a:visited,
+#header-bottom .block-menu ul.menu li a:link, #header-bottom .block-menu ul.menu li a:visited {
+  color:#777777;
+  padding:0px 10px;
+  text-align:left;
+}
+#header-top .block-menu ul.menu li:hover a:link, #header-top .block-menu ul.menu li:hover a:visited,
+#header-top .block-menu ul.menu li.sfHover a:link, #header-top .block-menu ul.menu li.sfHover a:visited,
+#header-bottom .block-menu ul.menu li:hover a:link, #header-bottom .block-menu ul.menu li:hover a:visited,
+#header-bottom .block-menu ul.menu li.sfHover a:link, #header-bottom .block-menu ul.menu li.sfHover a:visited {
+  color:#777777;
+}
+#header-top .block-menu ul.menu li.sfHover li a:link, #header-top .block-menu ul.menu li.sfHover li a:visited,
+#header-bottom .block-menu ul.menu li.sfHover li a:link, #header-bottom .block-menu ul.menu li.sfHover li a:visited {
+  background:none;  
+}
+#header-top .block-menu ul.menu ul,
+#header-bottom .block-menu ul.menu ul {
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius:3px;
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #E0E0E0;
+  padding: 10px 10px;
+  position:absolute;
+  left:0px;
+  width:170px;
+  top:26px;
+  z-index:99;
+  margin:0px;
+}
+#header-top .block-menu  ul.menu li ul li:hover, #header-bottom .block-menu ul.menu li ul li:hover,
+#header-top .block-menu  ul.menu li ul li.sfHover , #header-bottom .block-menu ul.menu li ul li.sfHover {
+  background-color:#f6f6f6;
+}
+#header-top .block-menu ul.menu li li.expanded, #header-bottom .block-menu ul.menu li li.expanded {
+  background-image:url(../images/primary-menu-expanded.gif);
+  background-position:158px 10px;
+  background-repeat:no-repeat;
+}
+#header-top .block-menu ul.menu li li, #header-bottom .block-menu ul.menu li li {
+  border-bottom:1px solid #dadada;
+}
+
+#header-top .block-menu ul.menu li li.last, #header-bottom .block-menu ul.menu li li.last {
+  border-bottom:0px;
+}
+#header-top .block-menu ul.menu li li.first, #header-bottom .block-menu ul.menu li li.first {
+  border-top:0px;
+}
+#header-top .block-menu ul.menu ul ul, #header-bottom .block-menu ul.menu ul ul {
+  top:-1px;
+  left:170px;
+}
+#header-top .block-menu ul.menu ul li, #header-bottom .block-menu ul.menu ul li {
+  width:170px;
+}
+#header-top .block-menu ul.menu ul li a:link, #header-top .block-menu ul.menu ul li a:visited, #header-bottom .block-menu ul.menu ul li a:link, #header-bottom .block-menu ul.menu ul li a:visited {
+  padding:7px 10px;
+  font-weight:normal;
+  border:none;
+  width:150px;
+  height:auto;
+}
+/* For right aligned menu */
+#header-top .fusion-right ul, #header-bottom .fusion-right ul {
+  float:right;
+}
+#header-top .fusion-right ul.menu li, #header-bottom .fusion-right ul.menu li {
+  margin-left:2px;
+  margin-right:0px;
+}
+#header-top .fusion-right ul.menu li li, #header-bottom .fusion-right ul.menu li li {
+  margin:0px;
+}
+#content-header {
+  margin:auto;
+  clear:both;
+}
+#content-header-sub-inner {
+  padding:0 10px;
+}
+/* Full Node */
+#page div.full-node {
+  margin-bottom:5px;
+  border-bottom:none;
+}
+#page .full-node .field-field-image img {
+  padding:4px;
+  margin-top:1px;
+}
+#page .full-node .picture {
+  padding-top:0px;
+}
+/* For Teaser */
+div.node {
+  border-bottom:1px solid #dadada;
+  clear:both;
+  margin-bottom:40px;
+}
+div.full-node {
+  margin-bottom:25px;
+}
+div.node-last {
+  margin-bottom:8px;
+}
+.node .picture {
+  float:left;
+  background:#ffffff;
+  padding-top:2px;
+  padding-right:10px;
+  padding-bottom:0px;
+  padding-bottom:7px;
+}
+.node .picture img {
+  display:block;
+}
+.node h2.title {
+  font-size:1.67em;
+  line-height:1.32em;
+  font-weight:normal;
+  margin-bottom:8px;
+}
+#page .node h2.title a:link, #page .node h2.title a:visited {
+  color:#444444; 
+}
+.node .content {
+  clear:both;
+}
+.node .meta {
+  background:#f8f8f8;
+  border:1px solid #dadada;
+  border-width:0px 0px 1px 0px;
+  color:#808080;
+  font-size:.92em;
+  padding:3px 1px 2px;
+  text-transform:capitalize;
+  margin-bottom:2px;
+}
+.node .meta a:link, .node .meta a:visited {
+  background:#ffffff;
+  padding:1px 4px;
+  margin:0 1px;
+}
+.node .meta .submitted, .node .meta .terms {
+  padding:0 0 0 7px;
+}
+.node .meta .terms {
+  display:inline;
+}
+/* Node Image */
+.node .field-field-image {
+  float:right;
+  margin-left:10px;
+  margin-top:3px;
+  margin-bottom:5px;
+}
+.full-node .field-field-image {
+  float:left;
+  margin:3px 10px 5px 0;
+}
+.node .field-field-image a {
+  display:block;
+  float:left;
+  background:url(../images/image-shadow.png) center bottom no-repeat;
+  padding-bottom:8px;
+}
+.node .field-field-image img {
+  display:block;
+  padding:4px;
+  border:1px solid #dadada;
+}
+/* Node Links */
+div.node-links {
+  clear:both;
+  padding:13px 10px 13px 10px;
+  background:#f8f8f8;
+  border-top:1px solid #dadada;
+}
+div.full-node div.node-links {
+  border-bottom:1px solid #dadada;
+}
+#page ul.links li {
+  padding-bottom:0px;
+  padding-right:8px;
+}
+#page ul.links li a:link, #page ul.links li a:visited {
+  margin: 2px;
+  background: #f6f6f6 url(../images/button-bg.gif) left bottom repeat-x;
+  border:1px solid #c4c4c4;
+  color:#6c6c6c;
+  text-shadow:1px 1px #ffffff;
+  font-weight:normal;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  line-height:normal;
+  font-weight:normal;
+  font-size:1em;
+  padding:0px;
+}
+#page ul.links li span {
+  padding:6px 9px 5px;
+}
+#page ul.links li a:hover {
+  background-image:url(../images/button-bg-hover.gif);
+  background-color:#fafafa;
+}
+#page ul.links li.node_read_more span {
+  background-image:url(../images/node-link-icons.gif);
+  background-position:right -31px;
+  background-repeat:no-repeat;
+  padding-right:24px;
+}
+#page ul.links li.comment_add span, #page ul.links li.comment_comments span {
+  background-image:url(../images/node-link-icons.gif);
+  background-position:right 8px;
+  background-repeat:no-repeat;
+  padding-right:29px;
+}
+/* Preview Comment */
+div.box .preview {
+  background:#fffee5;
+}
+/* Comment Title */
+div.box h2.title {
+  font-size:150%;
+  padding-top:10px;
+  font-weight:normal;
+}
+/*--------------------------------------------------------------*/
+/* Search Block
+/---------------------------------------------------------------*/
+.block-search label {
+  display:none;
+}
+#block-search-0 {
+  overflow:hidden;
+}
+#block-search-0 span {
+  background:none;
+}
+#block-search-0 .form-item {
+  margin:0px;
+  display:block;
+  margin-right:72px;
+}
+#header-top #search-block-form {
+  padding:5px 0;
+}
+.sidebar-first #search-block-form, .sidebar-second #search-block-form {
+  width:88%;
+}
+#search-block-form {
+  padding:3px 0 5px;
+}
+#block-search-0 .container-inline {
+  width:100%;
+  position:relative;
+}
+#block-search-0 .form-item .form-text {
+  width:95%;
+  line-height:normal;
+  position:relative;
+  z-index:1;
+  overflow:visible;
+}
+#block-search-0 .form-submit {
+  margin:0px;
+  line-height:1em;
+  width:62px;
+  height:24px;
+  cursor:pointer;
+  position:absolute;
+  right:0px;
+  top:0px;
+  overflow:hidden;
+  z-index:5;
+  text-align:center;
+  padding:0;
+  padding:0px 0 0px;
+}
+/* Search block width for fluid layout */
+.grid-type-fluid #header-top-wrapper #block-search-0, .grid-type-fluid #header-group-wrapper #block-search-0 {
+  width:190px;
+}
+/*--------------------------------------------------------------*/
+/* Block Theme
+/---------------------------------------------------------------*/
+.block {
+  padding-bottom:16px;
+  margin-bottom:0px;
+}
+#page .block .inner {
+  padding:0px;
+}
+/* Default Block Styling */
+.block h2.block-title { /* Default block title formatting */
+  font-size:1.750em;
+  font-weight:normal;
+  line-height:normal;
+  margin:0 0 14px 0;
+  padding:0;
+}
+/* Bottom-line */
+#page .bottom-line .inner {
+  background:url(../images/bottom-line.png) center bottom no-repeat;
+  padding-bottom:24px;
+  clear:both;
+}
+#page .bottom-line  {
+  padding-bottom:24px;
+}
+/* Grey Bg */
+#page .grey-bg .inner {
+  background:#f2f2f2;
+  border:1px solid #e6e6e6;
+  padding:7px 10px;
+}
+/* White Bg */
+#page .white-bg .inner { /* Preferable for footer Regions */
+  background:#ffffff;
+  border:1px solid #e6e6e6;
+  padding:7px 10px;
+}
+/* Solid Bg */
+#page .solid-bg .inner {
+  border:1px solid #e6e6e6;
+  padding:7px 10px;
+  color:#ffffff;
+}
+#page .solid-bg .inner, #page .solid-bg .inner h2.block-title {
+  text-shadow:none;
+}
+#page .solid-bg .inner a:link, #page .solid-bg .inner a:visited {
+  color:#e6e6e6;
+}
+#page .solid-bg .inner a:hover {
+  color:#ffffff;
+}
+/* Grey Gradient Title */
+#page .grey-gradient-title-bg .inner {
+  border:1px solid #e6e6e6;
+}
+#page .grey-gradient-title-bg .inner .content {
+  background:#f2f2f2;
+  padding:7px 10px;
+}
+#page .grey-gradient-title-bg .inner h2.block-title {
+  background:#ffffff url(../images/gradient-title.gif) left top repeat-x;
+  border-bottom:1px solid #e6e6e6;
+  padding:4px 10px;
+  border-bottom:1px solid #e6e6e6;
+  margin:0px;
+}
+/* White Gradient Title */
+#page .white-gradient-title-bg .inner {
+  border:1px solid #e6e6e6;
+}
+#page .white-gradient-title-bg .inner .content {
+  background:#ffffff;
+  padding:0px 10px;
+}
+#page .white-gradient-title-bg .inner h2.block-title {
+  background:#ffffff url(../images/gradient-title.gif) left top repeat-x;
+  padding:7px 10px;
+  border-bottom:1px solid #e6e6e6;
+  font-size:1.3em;
+  margin-bottom:3px;
+}
+/* Block Edit */
+.block:hover .fusion-edit {
+  display: block;
+}
+/* Block list */
+.block ul, .block ol, #user-login-form .item-list ul {
+  margin-left:17px;
+}
+/* List styles */
+.block-menu_block ul li, div.item-list ul li {
+  list-style-image:  url(../images/list-style-arrow.png);
+}
+.block-menu_block ul {
+  margin-left:18px;
+}
+.block-menu_block ul li {
+  padding:3px 0 2px;
+}
+.block-menu_block ul li.expanded, .block-menu_block ul li.last {
+  padding-bottom:0px;
+}
+/* Arrow */
+ul.arrow {
+  margin-left:0px;
+  background:none;
+}
+ul.arrow li {
+  background:  url(../images/list-style-arrow.png) left center no-repeat;
+  padding-left:14px;
+  list-style:none;
+  list-style-image:none;
+  padding-top:3px;
+  padding-bottom:3px;
+}
+/* Line */
+ul.line li {
+  border-bottom:1px solid #DFDFDF;
+  padding-top:9px;
+  padding-bottom:9px;
+  display:block;
+}
+ul.line li.first {
+  padding-top:5px;
+  background-position:0px 9px
+}
+#footer-wrapper ul.line li {
+  border-bottom:1px solid #505050;
+  border-bottom: rgba(255, 255, 255, .20) 1px solid;
+}
+#page ul.line li.last {
+  border-bottom:0px;
+}
+ul.line li a:link, ul.line li a:visited {
+  text-decoration:none;
+}
+/* Quick Tabs */
+div.quicktabs-style-nostyle, ul.quicktabs-style-nostyle {
+  float:left;
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+div.quicktabs-style-nostyle p {
+  margin:1em 0 0;
+}
+ul.quicktabs-style-nostyle {
+  position:relative;
+  top:1px;
+  z-index:1;
+}
+ul.quicktabs-style-nostyle li, ul.quicktabs-style-nostyle li a:link, ul.quicktabs-style-nostyle li a:visited {
+  float:left;
+  display:block;
+  padding:0px;
+  margin:0px;
+  text-decoration:none;
+}
+div.quicktabs_main {
+  border-top:1px solid #e6e6e6;
+}
+ul.quicktabs-style-nostyle li {
+  margin-right:3px;
+  height:24px;
+  border:1px solid #ffffff;
+  border-width:1px 1px 0px 1px;
+}
+ul.quicktabs-style-nostyle li.active, ul.quicktabs-style-nostyle li:hover {
+  border-width:1px 1px 0px 1px;
+  border-color:#e6e6e6 #e6e6e6 #ffffff #e6e6e6;
+  border-style:solid;
+  height:27px;
+}
+ul.quicktabs-style-nostyle li a:link, ul.quicktabs-style-nostyle li a:visited {
+  background: #ffffff;
+  border:1px solid #ffffff;
+  color: #444444;
+  padding: 3px 15px 1px;
+  font-weight: bold;
+  height:18px;
+}
+ul.quicktabs-style-nostyle li.active a:link, ul.quicktabs-style-nostyle li.active a:visited, ul.quicktabs-style-nostyle li:hover a:link, ul.quicktabs-style-nostyle li:hover a:visited {
+  padding:3px 15px 4px;
+  background:#ffffff;
+  border:1px solid #ffffff;
+  color:#444444;
+  background:#ffffff url(../images/tabs-bg.gif) left top repeat-x;
+}
+#page ul.quicktabs-style-nostyle li a:active, #page ul.quicktabs-style-nostyle li a:focus, #page ul.quicktabs-style-nostyle li a:hover {
+  color:#444444;
+}
+/* Quicktabs inner Block margin  */
+div.quicktabs-style-nostyle .block {
+  padding-bottom:0px;
+}
+div.quicktabs-style-nostyle .block .inner {
+  margin:0px;
+}
+div.quicktabs_main {
+  border-top-width:1px;
+  border-top-style:solid;
+}
+div.quicktabs_tabpage {
+  width:100%;
+  float:left;
+  position:relative;
+  top:-1px;
+}
+/* Recent Comments */
+.view-comments-recent ul, .view-comments-recent li {
+  padding:0px;
+  margin:0px;
+  list-style-image:none !important;
+  list-style:none !important;
+}
+#page .view-comments-recent li {
+  border-bottom:1px solid #dadada;
+  padding:9px 0;
+}
+#page .view-comments-recent li.views-row-first {
+  padding-top:0px;
+}
+.view-comments-recent li.views-row-even {
+  background:#f8f8f8;
+}
+.view-comments-recent li.last {
+  border:none;
+}
+.view-comments-recent .views-field-timestamp {
+  font-size:0.92em;
+  color:#686868;
+}
+.view-comments-recent .views-field-timestamp em {
+  font-style:normal;
+}
+.view-comments-recent .views-field-subject a:link, .view-comments-recent .views-field-subject a:link {
+  color:#444444;
+}
+/*--------------------------------------------------------------*/
+/* System
+/---------------------------------------------------------------*/
+/* Forms */
+input.form-text, textarea {
+  background:transparent url(../images/input-bg.png) left top repeat-x;
+  border:1px solid #cdcdcd;
+  color:#333333;
+}
+fieldset input.form-text, fieldset textarea {
+  background-color:#ffffff;
+}
+input.form-text, textarea {
+  padding:4px 5px;
+}
+html.js textarea {
+  width:95%;
+}
+.update .info, tr.info {
+  background-image:none;
+  min-height:inherit;
+  display:inherit;
+}
+.update .info {
+  background:none;
+}
+.help code, .option code, .description code {
+  display:inline;
+  padding:0px;
+  margin:0px;
+  background:none;
+  border:none;
+  font-style:italic;
+  font-weight:bold;
+}
+
+/* Fieldset CSS */
+fieldset {
+  border: 1px solid #e6e6e6;
+  margin: 5px 0;
+  padding: 10px;
+  background:#f8f8f8;
+}
+fieldset.collapsed {
+  background:none;
+}
+fieldset legend {
+  font-weight: bold;
+}
+html.js fieldset.collapsible legend a {
+  font-weight: bold;
+}
+/* Legend CSS */
+legend, legend a:link, legend a:visited {
+  background:none;
+}
+/* Label */
+.form-item label {
+  color:#333333;
+  font-weight:normal;
+  padding-bottom:3px;
+}
+/* Overlabel */
+.overlabel-wrapper {
+  position:relative;
+}
+label.overlabel{
+  position:absolute;
+  left:5px;
+  top:5px;
+  padding-bottom:0px;
+  line-height:1em;
+}
+/* Login Box */
+#user-login-form .form-text {
+  width:92%;
+}
+/* Who's online */
+#block-user-3 h3 {
+  font-size:114.28%;
+  margin-top:0.5em;
+}
+/*** Forum ***/
+tbody {
+  border:none;
+}
+#forum table {
+  width:100%;
+  clear:both;
+}
+#forum thead th {
+  padding:10px 3px 4px 26px;
+}
+#forum td.container {
+  background:#ffffff;
+  border-bottom:2px solid #FFFFFF;
+}
+#forum .name {
+  font-weight:bold;
+}
+#forum .description {
+  margin:0px;
+}
+#forum .last-reply, #forum .created {
+  font-size:1em;
+}
+#forum tr td.forum {
+  background-image:url(../images/icons/forum-default.png);
+  background-position:12px 13px;
+  padding-left:50px;
+}
+.forum-topic-navigation {
+  padding:10px 8px;
+  margin:5px 0 15px;
+}
+#wrapper .forum-topic-navigation a:link, #wrapper .forum-topic-navigation a:visited {
+  color:#FFFFFF;
+}
+.forum-topic-navigation .topic-previous {
+  text-align:left;
+}
+.forum-topic-navigation .topic-next {
+  text-align:right;
+}
+#wrapper #forum ul.links {
+  background:none;
+  padding:0px;
+}
+#forum .icon {
+  padding-left:12px;
+  padding-right:12px;
+  padding-top:15px;
+}
+/*--------------------------------------------------------------*/
+/* Front Featured Dynamic Display Block
+/---------------------------------------------------------------*/
+/* Block edit z-index fix */
+#block-ddblock-1, #block-views-front_featured_kwicks-block_1 {
+  width:960px !important;
+  background:url(../images/feature-shadow.png) center bottom no-repeat;
+}
+#block-ddblock-1 .fusion-edit {
+  z-index:201;
+}
+.ddblock-cycle-converge {
+  position:relative;
+  z-index:1;
+}
+.ddblock-cycle-converge .slide {
+  position:relative;
+  width:940px !important
+}
+.ddblock-cycle-converge .slide-image img {
+  padding:0 !important;
+  background:none !important;
+  border:0 !important;
+  display:block;
+}
+/* Slide Title */
+#page .ddblock-cycle-converge .slide-title a:link, #page .ddblock-cycle-converge .slide-title a:visited {
+  color:#f3f3f3;
+}
+/* Sliding Text */
+.ddblock-cycle-converge .slide-text {
+  position:absolute;
+  background-color:none !important;
+  background: url(../images/black-transparent.png) left top repeat;
+  color:#f3f3f3;
+  width:340px;
+  left:18px;
+  bottom:18px;
+  padding:14px 16px 14px;
+  z-index:2;
+}
+.ddblock-cycle-converge .slide-body-horizontal {
+  margin:0.45em 0 0.75em;
+}
+.ddblock-cycle-converge .slide-text p {
+  margin:0;
+}
+.ddblock-cycle-converge .slide-title h2.title {
+  font-size:1.83em;
+  font-weight:normal;
+  line-height:normal;
+  margin:0px;
+}
+#page .ddblock-cycle-converge .slide-text a:link, #page.ddblock-cycle-converge .slide-text a:visited, #page.ddblock-cycle-converge .slide-text a:active, #page.ddblock-cycle-converge .slide-text a:hover, #page.ddblock-cycle-converge .slide-text a:focus {
+  color:#f3f3f3;
+}
+/* DDBlock Rotator Left/Right Arrow */
+.ddblock-cycle-converge .next2, .ddblock-cycle-converge .prev2 {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  z-index: 1000;
+  left:15px;
+  top:50%;
+  cursor:pointer;
+  background:transparent url(../images/next-prev-pager.png) -32px -32px no-repeat;
+  margin:-16px 0 0 0;
+}
+.ddblock-cycle-converge .next2 {
+  left:auto;
+  right:15px;
+  background-position:-32px 0;
+}
+.ddblock-cycle-converge .prev2:hover {
+  background-position:0 -32px;
+}
+.ddblock-cycle-converge .next2:hover {
+  background-position:0 0;
+}
+/* DDBlock Rotator Pager */
+.ddblock-cycle-converge .custom-pager-inner {
+  background:url(../images/ddbock-pager-bg.png) left top repeat;
+  padding:9px 9px 9px 0;
+}
+.ddblock-cycle-converge .custom-pager {
+  position:absolute;
+  right:10px;
+  bottom:10px;
+  background-position:left top;
+  padding:0 0 0 0px;
+  float:right;
+  display:block;
+  z-index:200;
+}
+.ddblock-cycle-converge .custom-pager a:link, .ddblock-cycle-converge .custom-pager a:visited {
+  background:url(../images/ddbock-pager.png) 0 -9px no-repeat;
+  display:block;
+  float:left;
+  width:9px;
+  height:9px;
+  margin-left:9px;
+  margin-right:0px;
+  text-indent:-999px;
+  overflow:hidden;
+}
+.ddblock-cycle-converge .custom-pager a.activeSlide:link, .ddblock-cycle-converge .custom-pager a.activeSlide:visited {
+  background-position:0 0;
+}
+/*--------------------------------------------------------------*/
+/* Kwicks Slider
+/---------------------------------------------------------------*/
+.view-front-featured-kwicks .item-list ul {
+  position: relative;
+  overflow: hidden;
+  color:#444444;
+  background:#000000;
+  padding:0px;
+  margin:auto;
+  overflow:hidden;
+}
+.view-front-featured-kwicks .item-list ul li {
+  display:block;
+  overflow:hidden;
+  background:#ffffff url(../images/preload.gif) center center no-repeat;
+}
+.view-front-featured-kwicks .item-list ul .fade-bg {
+  background:url(../images/fade-bg.png) 0px top repeat-y;
+  height:600px;
+  width:42px;
+  display:block;
+  position:absolute;
+  right:0px;
+  top:0px;
+  z-index:2;
+}
+.view-front-featured-kwicks .item-list ul h4 {
+  font-size:18px;
+  font-weight:normal;
+  line-height:normal;
+  letter-spacing:-0.03em;
+}
+.view-front-featured-kwicks .item-list ul  .slide-description h4 {
+  font-size:1.83em;
+}
+.view-front-featured-kwicks .item-list ul p {
+  margin-top:6px;
+  margin-bottom:2px;
+  line-height:1.5em;
+}
+.view-front-featured-kwicks .item-list ul h4, .view-front-featured-kwicks .item-list ul .slide-description {
+  cursor: pointer;
+  display: block;
+  right: 0;
+  width:340px;
+  font-weight:normal;
+  line-height: normal;
+  bottom: 18px;
+  margin-left:18px;
+  position: absolute;
+  z-index: 2;
+  padding:16px 20px 16px;
+  background:url(../images/black-transparent.png) left top repeat;
+  color:#f3f3f3;
+}
+.view-front-featured-kwicks .item-list ul h4 {
+  margin:0px;
+  right:0px;
+  left:auto;
+  width:auto;
+}
+.view-front-featured-kwicks .item-list ul  .slide-description h4 {
+  padding:0px;
+  background:none;
+  position:static;
+  display:block !important;
+  width: auto !important;
+}
+#page .view-front-featured-kwicks a:link, #page .view-front-featured-kwicks a:visited {
+  color:#f3f3f3;
+  text-decoration:none;
+}
+
+/*--------------------------------------------------------------*/
+/* View Recent Post / View Most Commented
+/---------------------------------------------------------------*/
+.view-recent-post .item-list ul {
+  margin-left:0px;
+}
+.view-recent-post .views-row, .view-most-commented .views-row {
+  border-top:1px solid #ffffff;
+  border-bottom:1px solid #dfdfdf;
+  padding-bottom:13px;
+  padding-top:12px;
+  float:left;
+  width:100%;
+  line-height:1.5em;
+  list-style:none;
+  list-style-image:none;
+}
+.view-recent-post .views-row-first, .view-most-commented .views-row-first {
+  border-top:none;
+  padding-top:2px;
+}
+.view-recent-post .views-row-last, .view-most-commented .views-row-last {
+  border-bottom:none;
+  padding-bottom:4px;
+}
+.view-recent-post .views-field-field-image-fid img, .view-most-commented .views-field-field-image-fid img {
+  display:block;
+  padding:2px;
+  border:1px solid #d3d3d3;
+  background:#ffffff;
+  box-shadow:2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.view-recent-post .views-field-field-image-fid, .view-most-commented .views-field-field-image-fid {
+  float:left;
+  padding-right:10px;
+  padding-top:3px;
+}
+.view-recent-post .views-field-title, .view-most-commented .views-field-title {
+  font-size:1em;
+  font-weight:bold;
+}
+.view-recent-post a:link, .view-recent-post a:visited,
+.view-most-commented a:link, .view-most-commented a:visited {
+  color:#444444;
+  text-decoration:none;
+}
+.view-recent-post .views-field-created, .view-most-commented .views-field-created {
+  font-size:.92em;
+  color:#888888;
+}
+.view-recent-post .views-field-created, .view-recent-post .views-field-body,
+.view-most-commented .views-field-created, .view-most-commented .views-field-body {
+  display:inline;
+}
+/*--------------------------------------------------------------*/
+/* Lastest News
+/---------------------------------------------------------------*/
+.view-latest-news .item-list ul, .view-latest-news .item-list ul li {
+  padding:0px;
+  margin:0px;
+  list-style:none;
+  list-style-image:none;
+}
+.view-latest-news .item-list .views-field-created {
+  font-size:0.92em;
+}
+.view-latest-news .item-list ul li {
+  border-top:1px solid #ffffff;
+  border-bottom:1px solid #e6e6e6;
+  padding:12px 0 13px 0;
+}
+.view-latest-news .item-list ul li.views-row-first {
+  border-top:none;
+  padding-top:2px;
+}
+.view-latest-news .item-list ul li.views-row-last {
+  border-bottom:none;
+}
+.view-latest-news .item-list ul li a:link , .view-latest-news .item-list ul li a:visited {
+  color:#444444;
+  text-decoration:none;
+}
+#footer .view .item-list ul li {
+  background:url(../images/footer-border.png) left top repeat-x;
+  border:0px;
+}
+#footer .view .item-list ul li.views-row-first {
+  background:none;
+}
+/*--------------------------------------------------------------*/
+/* Recently Published
+/---------------------------------------------------------------*/
+.view-recent-published-post .view-header span.title {
+  color:#424242;
+  font-size:1.4em;
+  font-weight:normal;
+  line-height:normal;
+  display:inline;
+  margin:0 0 5px;
+  padding-right:5px;
+}
+.view-recent-published-post .view-header {
+  padding-bottom:16px;
+}
+.view-recent-published-post .view-content {
+  float:left;
+  width:100%;
+  clear:both;
+}
+.view-recent-published-post .view-header h3, .view-recent-published-post .view-header p {
+  display:inline;
+}
+.view-recent-published-post .views-field-title {
+  font-weight:bold;
+}
+.view-recent-published-post .views-field-title a, .view-recent-published-post .views-field-title a:link, .view-recent-published-post .views-field-title a:visited {
+  color:#444444;
+  text-decoration:none;
+}
+.view-recent-published-post .views-field-created {
+  color:#858585;
+  font-size:0.917em;
+  padding-top:8px;
+  padding-bottom:2px;
+  line-height:normal;
+}
+.view-recent-published-post .views-field-body {
+  margin:0.55em 0 0;
+}
+/*--------------------------------------------------------------*/
+/* Recent Projects
+/---------------------------------------------------------------*/
+.view-recent-projects .view-header span.title {
+  color:#424242;
+  font-size:1.4em;
+  font-weight:normal;
+  line-height:normal;
+  display:inline;
+  margin:0 0 5px;
+  padding-right:5px;
+}
+.view-recent-projects .view-header {
+  padding-bottom:16px;
+}
+.view-recent-projects .view-content {
+  width:100%;
+  float:left;
+  clear:both;
+}
+.view-recent-projects .view-header h3, .view-recent-projects .view-header p {
+  display:inline;
+}
+.view-recent-projects .views-field-field-teaser-title-value {
+  font-weight:bold;
+  padding-top:2px;
+  padding-bottom:1px;
+}
+.view-recent-projects .views-field-field-teaser-title-value a, .view-recent-projects .views-field-field-teaser-title-value a:link, .view-recent-projects .views-field-field-teaser-title-value a:visited {
+  color:#444444;
+  text-decoration:none;
+}
+.view-recent-projects .views-field-created {
+  color:#999999;
+  font-style:italic;
+  font-family:georgia;
+  padding-top:10px;
+  padding-bottom:2px;
+}
+.view-recent-projects .view-content .views-field-field-image-fid a:link, .view-recent-projects .view-content .views-field-field-image-fid a:visited {
+  display:block;
+  margin-right:10px;
+  position:relative;
+  min-height:169px;
+  background:#ffffff url(../images/preload.gif) center center no-repeat;
+}
+.view-recent-projects .view-content .views-field-field-image-fid .views-field-field-image-fid a {
+  position:relative;
+  display:block;
+  float:left;
+}
+.view-recent-projects .view-content .views-field-field-image-fid img {
+  display:block;
+  padding-bottom:9px;
+  background:url(../images/image-shadow.png) center bottom no-repeat;
+}
+.view-recent-projects .view-content .views-field-field-image-fid a span.magnify {
+  background:url(../images/icon-magnify.png) center center no-repeat;
+  position:absolute;
+  width:46px;
+  height:46px;
+  top:50%;
+  left:50%;
+  margin-top:-8px;
+  margin-left:-23px;
+  z-index:1;
+  cursor:pointer;
+}
+.view-recent-projects .view-content .views-field-field-image-fid a span.magnify-img {
+  display:block;
+  cursor:pointer;
+}
+
+/*** Recent Projects/Recently Published Common CSS ***/
+.view-recent-projects .view-content, .view-recent-published-post .view-content {
+  width:972px;
+  float:left;
+  position:relative;
+  left:-11px;
+  padding-bottom:4px;
+}
+.view-recent-projects .views-row, .view-recent-published-post .views-row {
+  width:220px;
+  margin:0 12px 21px 11px;
+  float:left;
+  display:block;
+  overflow:hidden !important;
+}
+.view-recent-published-post .views-row .views-field-field-teaser-description-value, .view-recent-published-post .views-row .views-field-field-teaser-title-value {
+  width:220px;
+}
+.block .view-recent-projects .views-row, .view-recent-published-post .views-row {
+  margin-bottom:0px;
+}
+#content-inner .view-recent-projects .views-row {
+  margin-bottom:23px;
+}
+.view-recent-projects .item-list ul {
+  margin:0px;
+  list-style:none;
+}
+.view-recent-projects .view-content .views-field-name {
+  display:none;
+}
+/*** Projects Page ***/
+#view-id-recent_projects-page_1 .view-header {
+  padding-top:5px;
+  line-height:normal;
+  padding-bottom:22px;
+  border-top:0px;
+}
+
+/*** Recent Projects in Categories ***/
+#page #block-views-portfolio_categories-block_1 {
+  position:absolute;
+  right:0;
+  width:auto;
+  padding-bottom:0px;
+  z-index:1;
+}
+.view-portfolio-categories .views-row, .view-portfolio-categories .views-field-name {
+  display:inline;
+}
+.view-portfolio-categories .views-field-name span {
+  display:block;
+  float:left;
+  background:url(../images/project-categories-bg.png) right -26px no-repeat;
+  margin:0 0 0 10px;
+}
+.view-portfolio-categories .views-field-name a:link, .view-portfolio-categories .views-field-name a:visited {
+  padding:7px 9px 6px;
+  color:#999999;
+  display:block;
+  float:left;
+  line-height:1em;
+  background:url(../images/project-categories-bg.png) left 0 no-repeat;
+  height:13px;
+}
+#page .view-portfolio-categories .views-field-name a:hover, #page .view-portfolio-categories .views-field-name a:active, #page .view-portfolio-categories .views-field-name a:focus {
+  color:#999999;
+  text-decoration:none;
+}
+#page .view-portfolio-categories .views-field-name a:hover, #page .view-portfolio-categories .selected a:link, #page .view-portfolio-categories .selected a:visited {
+  background-image:url(../images/project-categories-hover.png)
+}
+#page .view-portfolio-categories .views-field-name:hover span, #page .view-portfolio-categories .selected span {
+  background-image:url(../images/project-categories-hover.png)
+} 
+/*--------------------------------------------------------------*/
+/* Clearfix
+/---------------------------------------------------------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+/* Node 40 Block Flexibility Page */
+div#node-40  {
+  border-bottom:none;
+}
+/* Views Helper Class */
+#views-ui-edit-view-form {
+  margin-bottom:15px;
+}
+.views-query-info {
+  clear:both;
+}
+.view .more-link {
+  font-weight:bold;
+  clear:both;
+  text-align:right;
+  padding-top:5px;
+}
+.view .more-link span {
+  display:block;
+  background:url(../images/dots-horizontal.gif) scroll left top repeat-x ;
+  padding:10px 0px 3px;
+}
+.views-display div, .views-display .tab-section .inside .views-category-title {
+   font-size:1em;
+   line-height:1.5em;
+}
+#page span.cke_toolgroup {
+  height:auto;
+  background:#ffffff;
+}
+#page #cke_edit-body {
+  width:auto !important;
+}
+* {
+  outline:none !important;
+}
+/*** Webform ***/
+#webform-client-form-56 .form-item label.error {
+  color: red;
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  height:6px;
+  padding:2px 0px 0;
+  line-height:1em;
+  text-align:right;
+  position:relative;
+  top:3px;
+}
+#webform-client-form-56 .webform-component-textarea .form-item label.error {
+  top:0px;
+}
+#webform-client-form-56 .form-required {
+  display:none;
+}
+#webform-component-description textarea {
+  overflow:auto;
+}
+/* Collapse Button */
+.collapse-button {
+  position:absolute;
+  background:url(../images/collapse-button.png) 0 -28px no-repeat;
+  left:50%;
+  margin-left:439px;
+  width:31px;
+  height:28px;
+  display:block;
+  font-size:0px;
+  line-height:0;
+  z-index:10;
+  bottom:-35px;
+  cursor:pointer;
+}
+.collapse-button-plus {
+  background-position:left top;
+}
+.collapse-button:hover {
+  background-position:0 -84px;
+}
+.collapse-button-plus:hover {
+  background-position:0 -56px;
+}
+.collapse-button:focus, .collapse-button:active {
+  background-position:0 -140px;
+}
+.collapse-button-plus:focus, .collapse-button-plus:active {
+  background-position:0 -112px;
+}
+body.header-top-no-collpaisble .header-top-outer .collapse-button {
+  display:none;
+}
+/* jCarousel Lite */
+.view-partners-jcarousel {
+  padding-top:10px;
+}
+.view-partners-jcarousel .jcarousel-clip-horizontal, .view-partners-jcarousel .jcarousel-container-horizontal {
+  width:auto;
+}
+.view-partners-jcarousel .jcarousel-container-horizontal {
+  padding:0 10px;
+  background:#ffffff;
+  border:5px solid #e6e6e6;
+  height:130px;
+  position:relative;
+}
+.view-partners-jcarousel .jcarousel-item {
+  border:none;
+  height:56px;
+  padding:37px 0;
+}
+.view-partners-jcarousel .jcarousel-next, .view-partners-jcarousel .jcarousel-prev, .view-partners-jcarousel .jcarousel-next:hover, .view-partners-jcarousel .jcarousel-prev:hover {
+  position:absolute;
+  right:-5px;
+  top:-32px;
+  left:auto;
+  background:url(../images/jcarousel-buttons.gif) right top no-repeat;
+  height:20px;
+  width:20px;
+}
+.view-partners-jcarousel .jcarousel-prev, .view-partners-jcarousel .jcarousel-prev:hover {
+  right:20px;
+  background-position:left top;
+}
+/*** Light Box Theming ***/
+#lightbox2-overlay {
+  background:#000000 url(../images/overlay.png) left top repeat !important;
+}
+#loadingLink {
+  background:url(../images/loading.gif) left top no-repeat;
+}
+/* Close button */
+#bottomNavClose {
+  margin-top:0px;
+  padding-top:0px;
+  background-image:url(../images/close.gif);
+}
+/* Zoom button */
+#bottomNav {
+  position:relative;
+}
+.lightbox2-alt-layout #bottomNav {
+  position:static;
+}
+#bottomNavZoom, #bottomNavZoomOut {
+  position:absolute;
+  left:auto;
+  right:10px;
+  top:-70px;
+  background:url(../images/expand-contract.gif) 0 -50px no-repeat;
+  width:50px;
+  height:50px;
+}
+.lightbox2-alt-layout #bottomNavZoom, .lightbox2-alt-layout #bottomNavZoomOut {
+  right:20px !important;
+  top:auto;
+  bottom:20px !important;
+}
+#bottomNavZoomOut {
+  background-position:0 0;
+}
+#bottomNavZoom:hover {
+  background-position:-50px -50px
+}
+#bottomNavZoomOut:hover {
+  background-position:-50px 0;
+}
+#nextLink {
+  background:url(../images/next.gif) right 15% no-repeat !important;
+}
+#nextLink:hover {
+  background-image:url(../images/next-hover.gif) !important;
+}
+#prevLink {
+  background:url(../images/prev.gif) left 15% no-repeat !important;
+}
+#prevLink:hover {
+  background-image:url(../images/prev-hover.gif) !important;
+}
+.lightbox2-alt-layout #nextLink {
+  background-position:right -10px !important;
+}
+.lightbox2-alt-layout #prevLink {
+  background-position:left -10px !important;
+}
+#imageData #bottomNav {
+  height:auto;
+}
+/* Font Styling */
+#imageDataContainer {
+  font-weight:normal;
+  font-size:1em;
+  line-height:1.4em;
+  font-family:inherit;
+}
+#imageDetails {
+  padding-bottom:1em;
+}
+#imageData #numberDisplay {
+  padding-top:5px;
+  padding-bottom:0px;
+}
+/* Piecemaker Block CSS */
+#piecemaker {
+  position:relative;
+  top:-15px;
+  margin-bottom:-45px;
+}
+object#piecemaker {
+  background:url(../images/piecemaker-loading.gif) center center no-repeat;
+}
+/*** Tooltip on partners logo ***/
+#tool-tip {
+  position:absolute;
+  z-index:9999;
+  color:#fff;
+  font-size:12px;
+  width:190px;
+}
+#tool-tip .tipHeader {
+  height:8px;
+  background:url(../images/tip-header.png) left top no-repeat;
+}
+/* IE hack */
+* html #tool-tip .tipHeader {margin-bottom:-6px;}
+#tool-tip .tipBody {
+  background-color:#000;
+  padding:5px 5px 5px 15px;
+}
+#tool-tip .tipFooter {
+  height:8px;
+  background:url(../images/tip-footer.png) left top no-repeat;
+}
+/*** Contact Form ***/
+#footer .form-text, #footer .form-textarea {
+    color: rgba(255, 255, 255, 0.8);
+	border:1px solid #505050;
+	border: rgba(255, 255, 255, .20) 1px solid;
+
+	-moz-box-shadow:inset 2px 2px 5px rgba(0, 0, 0, .1);
+	-webkit-box-shadow:inset 2px 2px 5px rgba(0, 0, 0, .1);
+	box-shadow:inset 2px 2px 5px rgba(0, 0, 0, .1);
+
+	background: -moz-linear-gradient(
+		center top,
+		rgba(255, 255, 255, .03) 0%,
+		rgba(255, 255, 255, .05) 100%
+	);/* FF3.6 */
+	background: -webkit-gradient(
+		linear,
+		center bottom,
+		center top,
+		from(rgba(255, 255, 255, .03)),
+		to(rgba(255, 255, 255, .05))
+	);/* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#08FFFFFF', EndColorStr='#10FFFFFF'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#08FFFFFF', EndColorStr='#10FFFFFF')"; /* IE8 */
+}
+
+#footer .form-text, #footer .form-textarea, #footer .form-item label {
+}
+/*** Color Picker used at theme-settings page ***/
+.colorpicker {
+  z-index:10;
+}

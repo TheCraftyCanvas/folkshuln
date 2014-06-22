@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implementation of hook_enable().
+ */
+function unwelcome_enable() {
+  variable_set('site_frontpage', 'unwelcome');
+}
+
+
+/**
+ * Implementation of hook_disable().
+ */
+function unwelcome_disable() {
+  // Set site_frontpage variable back to default 'node' if it's still set to 'unwelcome',
+  // otherwise just uninstall the module
+
+  if (variable_get('site_frontpage', null) == 'unwelcome') {
+  	variable_del('site_frontpage');
+  }
+}

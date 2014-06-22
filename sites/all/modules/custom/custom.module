@@ -1,0 +1,154 @@
+<?php
+/*
+ function custom_form_alter(&$form, &$form_state, $form_id) {  
+if($form_id == 'webform_client_form_10') {
+	//cpr($form,1);
+	$form['submitted']['email']['#title'] = '';
+	$form['submitted']['email']['#size'] = 20;
+	$form['submitted']['email']['#default_value'] = 'your email';
+	$form['submitted']['email']['#prefix'] = '<div class="signup">';
+	$form['submitted']['email']['#suffix'] = '</div>';
+	$form['submitted']['email']['#attributes'] = array('onfocus'=>"this.value=''");
+	//$form['submit']['#name'] = 'Go';
+	$form['submit']['#prefix'] = '<div style="float:right">';
+	$form['submit']['#suffix'] = '</div>';
+	//onfocus
+}
+
+} 
+function custom_menu() {
+
+	$items = array();
+  // print '123';
+	 $items['home'] = array(
+    'title' => ' ',
+    'page callback' => 'custom_home',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );   
+return $items;
+}
+function custom_home() {
+
+	return ' ';
+}
+
+function custom_nodeapi(&$node, $op, $a3, $a4) {
+ // cpr($op);
+	switch ($op) {
+		case'view':
+			if($node->type=='page') {
+				
+				$node->content['body']['#value'] = '<div class="cbody">'.$node->content['body']['#value'].'</div>';
+				//cpr($node);
+			}
+		break;
+	}
+}
+
+
+
+
+function custom_menu() {
+
+	$items = array();
+  // print '123';
+	 $items['home'] = array(
+    'title' => '',
+    'page callback' => 'custom_home',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );   
+return $items;
+}
+function custom_home() {
+
+	$output =  theme(custom_home);
+	return $output;
+}
+
+function custom_theme() {
+  return array(
+				'custom_home' => array('arguments' => array(),'template' => 'custom_home'),
+							);
+}
+
+
+function custom_form_alter(&$form, &$form_state, $form_id) {  
+if($form_id == 'search_theme_form') {
+	//cpr($form,1);
+	$form['search_theme_form']['#title'] = '';
+	//$form['search_theme_form']['#size'] = 10;
+	$form['search_theme_form']['#attributes'] = array('id'=>'textfield','class'=>'searchtext','style'=>'float:left');
+	//$form['submit']['#type'] ='image';
+	$form['submit']['#attributes'] = array('class'=>'gobutton','src'=>'/sites/all/themes/coa/images/go.jpg');
+}
+
+if($form['nid']['#value']) cpr($form_id);	
+	
+}
+
+function custom_block($op = 'list', $delta = 0, $edit = array()) {
+	switch ($op) {
+    case 'list':
+      $block[0]['info'] = '';
+      return $block;
+   	break;
+    case 'view':
+        
+				switch ($delta) {
+          case 0:
+            $block['subject'] = 'TOP';
+            $block['content'] = 
+            break;
+        
+				
+        }
+      
+      return $block;
+
+    
+  }
+}
+function custom_nodeapi(&$node, $op, $a3, $a4) {
+ // cpr($op);
+	switch ($op) {
+		case'view':
+
+		break;
+	}
+}
+
+  */
+
+
+
+
+
+function cpr($item='',$expanded = 0) {
+	global $user;
+	if($user->uid == 1 || $_GET['sam']== 'yes') {
+		if(is_string($item)) {
+			drupal_set_message($item);
+		}
+		elseif($expanded) {
+			print '<pre style="text-align:left;font-size:12px;margin-top:40px;line-height:14px;background-color:#fff">';
+			print_r($item);
+			print '</pre>';
+		}
+		else {
+			$out = print_r($item, true);
+			$out = preg_replace('/([ \t]*)(\[[^\]]+\][ \t]*\=\>[ \t]*[a-z0-9 \t_]+)\n[ \t]*\(/iUe',"'\\1<a href=\"javascript:toggleDisplay(\''.(\$id = substr(md5(rand().'\\0'), 0, 7)).'\');\">\\2</a><div id=\"'.\$id.'\" style=\"display: none;\">'", $out);
+			$out = preg_replace('/^\s*\)\s*$/m', '</div>', $out);
+			print '<pre style="text-align:left;font-size:13px;background-color:#fff"><script language="Javascript">function toggleDisplay(id) { document.getElementById(id).style.display = (document.getElementById(id).style.display == "block") ? "none" : "block"; }</script>'."\n$out</pre>";
+		}
+			
+	}
+}
+function rarg($a=0) {
+	$arg = explode('/',$_REQUEST['q']);
+	return $arg[$a];
+}
+

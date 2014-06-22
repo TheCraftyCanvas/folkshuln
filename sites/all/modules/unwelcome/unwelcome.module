@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * Implementation of hook_menu().
+ */
+function unwelcome_menu() {
+  $items['unwelcome'] = array(
+    'page callback' => 'unwelcome_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+function unwelcome_menu_alter(&$items) {
+  $items['node']['page callback'] = 'unwelcome_page';
+}
+
+/**
+ * Menu callback.
+ *
+ * Redirects the following URI's to /
+ *
+ * /unwelcome
+ * /unwelcome/
+ * /unwelcome/whatever
+ * /node
+ * /node/
+ *
+ * Partially reuses functionality of node_page_default()
+ * to generate a listing of promoted nodes if present.
+ */
+function unwelcome_page() {
+  if (
+    isset($_SERVER['REQUEST_URI']) &&
+    preg_match('/\/((unwelcome|node)\/?$)/', $_SERVER['REQUEST_URI'])
+  ) {
+    drupal_goto('');
+  }
+
+  $result = pager_query(db_rewrite_sql('SELECT n.nid, n.sticky, n.created FROM {node} n WHERE n.promote = 1 AND n.status = 1 ORDER BY n.sticky DESC, n.created DESC'), variable_get('default_nodes_main', 10));
+
+  $output = '';
+  $num_rows = FALSE;
+  while ($node = db_fetch_object($result)) {
+    $output .= node_view(node_load($node->nid), 1);
+    $num_rows = TRUE;
+  }
+
+  if ($num_rows) {
+    $feed_url = url('rss.xml', array('absolute' => TRUE));
+    drupal_add_feed($feed_url, variable_get('site_name', 'Drupal') .' '. t('RSS'));
+    $output .= theme('pager', NULL, variable_get('default_nodes_main', 10));
+  }
+
+  drupal_set_title('');
+  return $output;
+}

@@ -1,0 +1,24 @@
+Creative fresh installation guide
+
+Assumptions
+
+» You have Drupal Friendly Environment (hosting): www.drupal.org/requirements/
+
+» You know how to create and import a database and how to use FTP.
+
+» You have already purchased and downloaded the licensed version of Creative theme - a Drupal 6.x theme.
+
+
+
+
+» Creative comes with installation profile, you just need to create the database for your website (learn more: - http://drupal.org/getting-started/6/install/create-database)
+
+» Follow all the steps that you need while installing Drupal (learn more: - http://drupal.org/getting-started/install). During choosing profile, select the Creative as an installation profile.
+
+» Once you have successfully installed the Creative Theme, browse to your website address (as you installed.)
+
+» The default admin access for your site will be as username/password - admin/admin. Please change your password from admin to your desired password immediately for security purpose.
+
+» You new advanced Drupal theme is installed. Enjoy!
+
+» IF you face any problem related the theme let me know I will be always there to help you (contact on my themeforest.com profile).

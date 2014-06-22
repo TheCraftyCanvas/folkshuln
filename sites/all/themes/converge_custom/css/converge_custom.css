@@ -1,0 +1,23 @@
+/****************************/
+/* converge_custom.css
+ * Write your all custom/desired css in this file.
+/****************************/
+
+
+/* Add your google font family here.
+-------------------------------------------------------------- */
+/* Default font family - this will effect all the regular text on your site */
+body.front, body.not-front {
+ /* font-family: add your font family here */
+}
+/* Changing this will affect the block title, site name and date field in recent published posts */
+.block h2.block-title, #site-name, .view-recent-published-post  .views-field-created {
+ /* font-family: add your font family here */
+}
+/* Chaning it will affect all the h1,h2,h3,h4,h5,h6, primary links (main site links), slogan text  */
+h1, h2, h3, h4, h5, h6, #navigation-bar, #slogan, #header-bottom .block-menu, #header-top .block-menu {
+ /* font-family: add your font family here */
+}
+
+/* Write your all CSS below this comment.
+-------------------------------------------------------------- */

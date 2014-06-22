@@ -1,0 +1,11 @@
+name = Unwelcome
+description = Removes default front-page content 'Welcome to your new Drupal website!' without hacks.
+core = 6.x
+package = Other
+
+; Information added by drupal.org packaging script on 2011-12-12
+version = "6.x-1.1"
+core = "6.x"
+project = "unwelcome"
+datestamp = "1323664847"
+
